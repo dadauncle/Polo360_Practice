@@ -1,0 +1,222 @@
+body{
+	background: url(../img/bd-bg.png) repeat-x;
+}
+
+/*解决浮动造成的高度塌陷问题*/
+.clearfix:before,
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.clearfix{
+	zoom: 1;
+}
+
+/*固定元素宽度*/
+.w{
+	width: 940px;
+	margin: 0 auto;
+}
+.header{
+	padding-top: 37px;
+	padding-bottom: 46px;	
+}
+
+.logo{
+	margin-left: 15px;	
+}
+
+.nav{
+	float: right;
+	list-style: none;
+	margin-top: 22px;
+}
+
+.nav li{
+	float: left;
+	padding: 0 10px;
+	border-left: 1px #d6d6d6 dotted ;
+}
+
+.nav a{
+	font: bold 14px georgia;
+	color: #666;
+	text-decoration: none;
+}
+
+/*设置鼠标移入效果*/
+.nav a:hover{
+	color: darkorange;
+	text-decoration: underline;
+}
+
+.nav p{
+	/*Chrome 最小支持字体12px,1—11px默认12px*/
+	font: 12px tahoma;
+	color: #b7b7b7;
+
+}
+
+.banner{
+	height: 356px;
+	background: url(../img/banner-bg.png) no-repeat bottom center;
+	position: relative;
+}
+
+.pointterDiv{
+	position: absolute;
+	top: 314px;
+	left: 15px;
+	
+}
+.pointterDiv a{
+	float: left;
+	width: 17px;
+	height: 17px;
+	background: url(../img/sprite.png) no-repeat;
+	margin-left: 4px;
+
+}
+
+.pointterDiv .active,.pointterDiv a:hover{
+	background: url(../img/sprite.png) no-repeat -27px 0px;
+}
+
+
+.content h1{
+	text-align: center;
+	font: bold 24px georgia;
+	padding: 6px 0 20px 0;
+	margin-bottom: 38px;
+	background: url(../img/line.png) no-repeat bottom center;
+}
+
+.content .pl,.cs,.uc,
+.contact .sc,.co,.nu{
+	float: left;
+	width: 300px;
+}
+.content .cs,.contact .co{
+	margin: 0 20px;
+}
+.content h2{
+	color: #11719E;
+	font: 21px georgia;
+}
+.content p{
+	font: 12px tahoma;
+	color: #b7b7b7;
+}
+.content .imgDiv{
+	width: 299px;
+	height: 190px;
+	background: url(../img/img-bg.png) no-repeat;
+	margin: 16px 0 16px 0;
+	/*图片水平居中*/
+	text-align: center;
+	/*垂直居中*/
+	padding-top: 12px;
+}
+.content .p2{
+	height: 92px;
+	color: #3e3e3e;
+	font: 13px helvetica;
+}
+.content .learnMore{
+	display: block;
+	width: 163px;
+	height: 40px;
+	background: url(../img/sprite.png) no-repeat 0px -70px;
+	text-decoration: none;
+	color: #016999;
+	font: 12px/40px helvetica;
+	text-indent: 1em;
+	margin-bottom: 35px;
+}
+.contact{
+	background: url(../img/line.png) no-repeat top center;
+}
+
+.contact .txt{
+	width: 286px;
+	height: 33px;
+	line-height: 33px;
+	background: url(../img/input.png) no-repeat;
+	border: none;
+	margin: 0;
+	padding: 0;
+	padding-left: 10px;
+	margin-bottom: 16px;
+}
+
+.contact .txtArea{
+	width: 286px;
+	height: 134px;
+	line-height: 33px;
+	background: url(../img/textarea.png) no-repeat;
+	border: none;
+	/*去除滚动条*/
+	overflow: auto;
+	/*设置文本域不能调节*/
+	resize: none;
+	padding: 0;
+	margin: 0;
+	padding-left: 10px;
+}
+.contact .btn{
+	width: 163px;
+	height: 32px;
+	background: url(../img/sprite.png) no-repeat 0px -27px;
+	border: none;
+	padding: 0;
+	margin: 11px 0 23px 0;
+	color: white;
+	font: 13px georgia;
+	text-align: left;
+	text-indent: 1em;
+}
+.contact h2{
+	color: #444;
+	font: 18px/1 georgia;
+	border-bottom: 1px dashed #d3d3d3;  
+	padding: 43px 0 10px 0;
+	margin-bottom: 15px;
+}
+.sc .p1{
+	color: #444444;
+	font: 12px/1 helvetica;
+}
+.icon{
+	/*去除空格*/
+	font-size: 0;
+	margin-top: 4px;
+}
+.icon a{
+	margin-right: 4px;
+}
+.sc .nl{
+	font:  bold 18px/1 "gill sans mt";
+	padding: 34px 0 10px 0;
+	
+}
+.sc .txt{
+	margin-bottom: 0px;
+    margin-top: 15px;
+}
+.nu img{
+	float: left;
+	margin-right: 8px;
+}
+.nu p{
+	color: #444444;
+	font: 12px/1 helvetica;
+	height: 58px;
+	border-bottom: 1px dashed #d3d3d3;
+	margin-bottom: 14px;
+	padding-bottom: 10px;
+	
+}
+.nu .noMargin{
+	margin: 0;
+}
